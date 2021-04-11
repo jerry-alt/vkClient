@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FriendsHeader" customModule="geekbrains" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# друзей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-zX-s8L">
+                    <rect key="frame" x="20" y="15" width="67.5" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="TextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-hY-nrj">
+                    <rect key="frame" x="358" y="10" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="5qd-Sm-QaW"/>
+                        <constraint firstAttribute="height" constant="30" id="Dou-dB-WhA"/>
+                    </constraints>
+                    <color key="tintColor" name="TintColor"/>
+                    <state key="normal">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large" renderingMode="template"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yQt-hY-nrj" secondAttribute="trailing" constant="20" id="9hc-yp-ert"/>
+                <constraint firstItem="yQt-hY-nrj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GCP-vS-vFb"/>
+                <constraint firstItem="Q3o-zX-s8L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="iDt-v7-pjM"/>
+                <constraint firstItem="Q3o-zX-s8L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="tdY-ir-Kmy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="friendsFindButton" destination="yQt-hY-nrj" id="bwh-tw-d7T"/>
+                <outlet property="friendsNumberLabel" destination="Q3o-zX-s8L" id="5ny-wm-Psp"/>
+            </connections>
+            <point key="canvasLocation" x="-89.855072463768124" y="498.88392857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="TextColor">
+            <color white="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.19215686274509805" green="0.76470588235294112" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

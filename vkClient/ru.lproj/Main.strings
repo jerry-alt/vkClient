@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Логин (номер):"; ObjectID = "4bO-Fl-7qg"; */
+"4bO-Fl-7qg.text" = "Логин (номер):";
+
+/* Class = "UIButton"; normalTitle = "Войти"; ObjectID = "IYx-EY-tf9"; */
+"IYx-EY-tf9.normalTitle" = "Войти";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ViJ-2a-FLv"; */
+"ViJ-2a-FLv.title" = "Item";
+
+/* Class = "UILabel"; text = "Пароль:"; ObjectID = "gda-J2-Pnt"; */
+"gda-J2-Pnt.text" = "Пароль:";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "i2v-rz-1Ea"; */
+"i2v-rz-1Ea.placeholder" = "Логин";
+
+/* Class = "UIButton"; normalTitle = "Регистрация"; ObjectID = "mKT-SL-dB9"; */
+"mKT-SL-dB9.normalTitle" = "Регистрация";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "oQG-FF-S6k"; */
+"oQG-FF-S6k.placeholder" = "Пароль";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "vWU-JN-2NW"; */
+"vWU-JN-2NW.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "xga-Jh-3S7"; */
+"xga-Jh-3S7.title" = "Item";
