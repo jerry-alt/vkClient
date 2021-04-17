@@ -19,6 +19,7 @@
 		DD692CE225EDCEF50027AB76 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD692CE125EDCEF40027AB76 /* UIColorExtension.swift */; };
 		DD6E8AA126234D43003AC9C2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E8AA026234D43003AC9C2 /* Session.swift */; };
 		DD719805261516B200BCE728 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD719804261516B200BCE728 /* SliderViewController.swift */; };
+		DD7D7B1F2628A3280010245A /* LoginVKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D7B1E2628A3280010245A /* LoginVKViewController.swift */; };
 		DDA16A1225E4753800CD3E6A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA16A1125E4753800CD3E6A /* FriendsViewController.swift */; };
 		DDA16A1725E475E900CD3E6A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA16A1625E475E900CD3E6A /* UserInfo.swift */; };
 		DDAC4D2D261652E2002BF326 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC4D2C261652E2002BF326 /* AnimationViewController.swift */; };
@@ -74,6 +75,7 @@
 		DD692CE125EDCEF40027AB76 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DD6E8AA026234D43003AC9C2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		DD719804261516B200BCE728 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		DD7D7B1E2628A3280010245A /* LoginVKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVKViewController.swift; sourceTree = "<group>"; };
 		DDA16A1125E4753800CD3E6A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		DDA16A1625E475E900CD3E6A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DDAC4D2C261652E2002BF326 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				DDD763D225EBD8990033AF69 /* Friends */,
 				DDD763D325EBD8BF0033AF69 /* Groups */,
 				DDCDF43D25DBD04D007A629D /* LoginViewController.swift */,
+				DD7D7B1E2628A3280010245A /* LoginVKViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7D7B1F2628A3280010245A /* LoginVKViewController.swift in Sources */,
 				DDB3E53A25E5432300F5B198 /* GroupTableViewCell.swift in Sources */,
 				DDCDF43E25DBD04D007A629D /* LoginViewController.swift in Sources */,
 				DD692CE225EDCEF50027AB76 /* UIColorExtension.swift in Sources */,

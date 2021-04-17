@@ -12,6 +12,12 @@ class NewsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // отображаем в консоль данные с вк
+        Session().getData(.namesAndAvatars)
+        Session().getData(.groups)
+        Session().getData(.photos)
+        Session().getData(.searchGroups)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

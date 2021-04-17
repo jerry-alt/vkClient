@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="808"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9eJ-Aq-Em2">
-                                        <rect key="frame" x="97" y="174.5" width="220" height="459"/>
+                                        <rect key="frame" x="97" y="148.5" width="220" height="511"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8k7-jj-zhq">
                                                 <rect key="frame" x="25" y="0.0" width="170" height="170"/>
@@ -77,11 +77,26 @@
                                                     <color key="titleColor" name="ButtonText"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="bLv-P3-JeG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="anY-tF-a9b"/>
+                                                    <segue destination="bLv-P3-JeG" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="anY-tF-a9b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKv-aI-LJi">
+                                                <rect key="frame" x="0.0" y="429" width="220" height="32"/>
+                                                <color key="backgroundColor" name="TintColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="ebo-g0-k5l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <state key="normal" title="Войти через VK">
+                                                    <color key="titleColor" name="ButtonText"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="RUN-Hg-3lX" kind="show" id="DgH-mi-zBt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKT-SL-dB9">
-                                                <rect key="frame" x="60" y="429" width="100" height="30"/>
+                                                <rect key="frame" x="60" y="481" width="100" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="Mlo-jr-CEn"/>
                                                 </constraints>
@@ -119,6 +134,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlE-ER-Ilx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="780.80357142857144"/>
+        </scene>
+        <!--LoginVK View Controller-->
+        <scene sceneID="oKX-aQ-4Xy">
+            <objects>
+                <viewController id="RUN-Hg-3lX" customClass="LoginVKViewController" customModule="vkClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y8A-sX-xP5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saR-HR-V6l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Os9-6q-YtW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="saR-HR-V6l" firstAttribute="top" secondItem="Os9-6q-YtW" secondAttribute="top" id="7ZR-1b-lTX"/>
+                            <constraint firstItem="saR-HR-V6l" firstAttribute="height" secondItem="y8A-sX-xP5" secondAttribute="height" id="CIF-cF-Quu"/>
+                            <constraint firstItem="saR-HR-V6l" firstAttribute="width" secondItem="y8A-sX-xP5" secondAttribute="width" id="dVd-Qo-RIc"/>
+                            <constraint firstItem="saR-HR-V6l" firstAttribute="leading" secondItem="Os9-6q-YtW" secondAttribute="leading" id="nPY-fe-f7V"/>
+                            <constraint firstItem="Os9-6q-YtW" firstAttribute="trailing" secondItem="saR-HR-V6l" secondAttribute="trailing" id="ynI-6I-97k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="joG-WS-2cC"/>
+                    <connections>
+                        <outlet property="webView" destination="saR-HR-V6l" id="2QM-r0-naq"/>
+                        <segue destination="bLv-P3-JeG" kind="presentation" identifier="login" modalPresentationStyle="fullScreen" id="mx7-G0-rMM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdX-En-kpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="1535"/>
         </scene>
         <!--Friends-->
         <scene sceneID="ALw-0h-Xuh">
@@ -173,6 +225,9 @@
             <point key="canvasLocation" x="1207" y="781"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mx7-G0-rMM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="logo" width="960" height="960"/>
         <namedColor name="ButtonColor">
@@ -183,6 +238,9 @@
         </namedColor>
         <namedColor name="TextColor">
             <color white="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.19215686274509805" green="0.76470588235294112" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
